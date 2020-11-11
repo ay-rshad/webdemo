@@ -86,7 +86,7 @@ class App extends Component {
   }
 
   /* ACTION METHODS FROM THE BUTTONS ON SCREEN */
-      createOffer(){
+      createOffer = () => {
         console.log('Offer');
         // initiates the creation of SDP
         this.pc.createOffer({ offerToReceiveVideo: 1 })
